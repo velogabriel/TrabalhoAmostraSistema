@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mostra Dados</title>
+</head>
+
+<body>
+    <div>
+        <h2>Mostra Dados</h2><hr><br>
+    </div>
+    <div>
+        <p id="pagina"></p>
+        <p id="vnome"></p>
+        <p id="vfone"></p>
+        <p id="v1"></p>
+        <p id="v2"></p>
+        <p id="v3"></p>
+        <p id="v4"></p>
+        <p id="v5"></p>
+        <p id="v6"></p>
+    </div>
+    <script>
+      document.getElementById("pagina").innerHTML=localStorage.getItem('chamapagina');
+      document.getElementById("vnome").innerHTML=localStorage.getItem('nome');
+      document.getElementById("vfone").innerHTML=localStorage.getItem('fone');
+      var v1=Number(localStorage.getItem('item0'));
+      if (v1>0) {
+         document.getElementById("v1").innerHTML="Item 1 / Quantidade = "+v1;
+      }
+      var v2=Number(localStorage.getItem('item1'));
+      if (v2>0) {
+         document.getElementById("v2").innerHTML="Item 2 / Quantidade = "+v2;
+      }
+      var v3=localStorage.getItem('item2');
+      if (v3>0) {
+         document.getElementById("v3").innerHTML="Item 3 / Quantidade = "+v3;
+      }
+      var v4=localStorage.getItem('item3');
+      if (v4>0) {
+         document.getElementById("v4").innerHTML="Item 4 / Quantidade = "+v4;
+      }
+      var v5=localStorage.getItem('item4');
+      if (v5>0) {
+         document.getElementById("v5").innerHTML="Item 5 / Quantidade = "+v5;
+      }
+      var v6=localStorage.getItem('item5');
+      if (v6>0) {
+         document.getElementById("v6").innerHTML="Item 6 / Quantidade = "+v6;
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <link rel="stylesheet" type="text/css" href="styles-modal.css">
+</head>
+<body>
+    <header>
+        <img src="logotecspetos.jpg" width="190" height="190">
+        <h1>Peça o seu Delicioso TecSpeto</h1>
+    </header>
+    <form>
+    <nav>
+      <a href="#"><span><button class="botao" id="finalizar-pedido">Finalizar</button></span></a>
+      <a href="#"><span><input type="reset" class="botao" id="redefinir"></span></a>
+  </nav>
+    <section id="conteudo">
+        <div class="scroll-container">
+          <div class="sessao">
+            <table>
+                <tr>
+                  <td rowspan="2">
+                    <img src="img1.jpg" alt="texto explicativo" width="180" height="140">
+                  </td> 
+                  <td colspan="2">
+                    <font size="4">
+                      <span><h2>Carne (R$ 7,00)</h2></span>
+                     </font>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td> 
+                      <img src="botaomais.png" class="somar" width="30" height="30" onclick="funcsomar(0)">&nbsp;&nbsp;
+                      <img src="botaomenoss.png" class="subtrair" width="30" height="30" onclick="funcsubtrair(0)">
+                  </td>
+                  <td class="qtd">
+                    <input class="numero" type="text" size="2" maxlength="2" readonly value="0">
+                  </td>
+                </tr>
+            </table>         
+        </div>
+        <div class="sessao">
+            <table>
+                <tr>
+                  <td rowspan="2">
+                    <img src="img2.jpg" alt="texto explicativo" width="180" height="140">
+                  </td> 
+                  <td colspan="2">
+                   <span><h2>Coração (R$ 7,00)</h2></span>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td> 
+                      <img src="botaomais.png" class="somar" width="30" height="30" onclick="funcsomar(1)">&nbsp;&nbsp;
+                      <img src="botaomenoss.png" class="subtrair" width="30" height="30" onclick="funcsubtrair(1)">
+                  </td>
+                  <td class="qtd">
+                    <input class="numero" type="text" size="2" maxlength="2" readonly value="0">
+                  </td>
+                </tr>
+            </table>         
+        </div>
+        <div class="sessao">
+            <table>
+                <tr>
+                  <td rowspan="2">
+                    <img src="img3.jpg" alt="texto explicativo" width="180" height="140">
+                  </td> 
+                  <td colspan="2">
+                   <span><h2>Pão de Alho (R$ 5,00)</h2></span>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td> 
+                      <img src="botaomais.png" class="somar" width="30" height="30" onclick="funcsomar(2)">&nbsp;&nbsp;
+                      <img src="botaomenoss.png" class="subtrair" width="30" height="30" onclick="funcsubtrair(2)">
+                  </td>
+                  <td class="qtd">
+                    <input class="numero" type="text" size="2" maxlength="2" readonly value="0">
+                  </td>
+                </tr>
+            </table>         
+        </div>
+
+        <div class="sessao">
+            <table>
+                <tr>
+                  <td rowspan="2">
+                    <img src="img1.jpg" alt="texto explicativo" width="180" height="140">
+                  </td> 
+                  <td colspan="2">
+                   <span><h2>Medalhão (R$ 8,50)</h2></span>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td> 
+                      <img src="botaomais.png" class="somar" width="30" height="30" onclick="funcsomar(3)">&nbsp;&nbsp;
+                      <img src="botaomenoss.png" class="subtrair" width="30" height="30" onclick="funcsubtrair(3)">
+                  </td>
+                  <td class="qtd">
+                    <input class="numero" type="text" size="2" maxlength="2" readonly value="0">
+                  </td>
+                </tr>
+            </table>         
+        </div>
+        <div class="sessao">
+            <table>
+                <tr>
+                  <td rowspan="2">
+                    <img src="img2.jpg" alt="texto explicativo" width="180" height="140">
+                  </td> 
+                  <td colspan="2">
+                   <span><h2>Kafta/Queijo (R$ 8,50)</h2></span>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td> 
+                      <img src="botaomais.png" class="somar" width="30" height="30" onclick="funcsomar(4)">&nbsp;&nbsp;
+                      <img src="botaomenoss.png" class="subtrair" width="30" height="30" onclick="funcsubtrair(4)">
+                  </td>
+                  <td class="qtd">
+                    <input class="numero" type="text" size="2" maxlength="2" readonly value="0">
+                  </td>
+                </tr>
+            </table>         
+        </div>
+        <div class="sessao">
+            <table>
+                <tr>
+                  <td rowspan="2">
+                    <img src="img3.jpg" alt="texto explicativo" width="180" height="140">
+                  </td> 
+                  <td colspan="2">
+                   <span><h2>Tulipa (R$ 7,00)</h2></span>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td> 
+                      <img src="botaomais.png" class="somar" width="30" height="30" onclick="funcsomar(5)">&nbsp;&nbsp;
+                      <img src="botaomenoss.png" class="subtrair" width="30" height="30" onclick="funcsubtrair(5)">
+                  </td>
+                  <td class="qtd">
+                    <input class="numero" type="text" size="2" maxlength="2" readonly value="0">
+                  </td>
+                </tr>
+            </table>         
+        </div>
+     
+        </div>
+      </div>
+    </section>
+    </form>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><font color="darkblue" size="4">Informe seus dados e confirme o pedido</font></p><hr>
+    <div class="input-group">
+       <p><input type="text" name="nome" id="nome" required><label>Nome</label></p>
+    </div>
+    <div class="input-group">
+        <p><input type="text" id="fone" name="fone" required><label>Telefone</label></p>
+    </div>
+    <font color="darkblue" size="4"><span id="totalmodal"></span></font>&nbsp;&nbsp;
+    <input type="submit" class="botao" id="confirmar-pedido" value="Confirmar" onclick="chamar()">
+</div>
+</div>
+
+<script>
+
+  var botaoFinalizar = document.querySelector("#finalizar-pedido");
+  botaoFinalizar.addEventListener("click", function(event) {
+      event.preventDefault();
+      var pedidos = document.querySelectorAll(".numero");
+      var total = 0;
+      for (var i = 0; i < pedidos.length; i++) {
+          var multiplica = 0;
+          if (i==0){var multiplica=7;}
+          if (i==1){var multiplica=7;}
+          if (i==2){var multiplica=5;}
+          if (i==3){var multiplica=8.5;}
+          var tdValor = Number(pedidos[i].value);
+          total = total + (tdValor * multiplica);
+      }
+      document.getElementById("totalmodal").innerHTML = "Total = R$ " + total.toFixed(2);
+  });
+
+  var botaoRedefinir = document.querySelector("#redefinir");
+  botaoRedefinir.addEventListener("click", function(event) {
+      document.getElementById("valorfinal").innerHTML = "";
+  });
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("finalizar-pedido");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+} 
+
+function funcsomar(pos){
+var calcsoma = document.querySelectorAll(".numero");
+maisum=Number(calcsoma[pos].value);
+maisum += 1;
+calcsoma[pos].value=maisum;
+};
+
+function funcsubtrair(pos){
+var calcsoma = document.querySelectorAll(".numero");
+maisum=Number(calcsoma[pos].value);
+maisum -= 1;
+if (maisum <0){maisum=0;}
+calcsoma[pos].value=maisum;
+};
+
+function chamar(){
+var vnome = document.getElementById("nome").value;
+var vfone = document.getElementById("fone").value;
+var pagina = "mostrar.html?nome="+vnome+"&fone="+vfone;
+var mandanumeros = document.querySelectorAll(".numero");
+for (var i = 0; i < mandanumeros.length; i++) {
+          var envianumero=Number(mandanumeros[i].value);
+          var vitem="item"+i;
+          pagina += ("&"+vitem+"="+envianumero);
+          if (i==0){localStorage.setItem("item0", envianumero);}
+          if (i==1){localStorage.setItem("item1", envianumero);}
+          if (i==2){localStorage.setItem("item2", envianumero);}
+          if (i==3){localStorage.setItem("item3", envianumero);}
+          if (i==4){localStorage.setItem("item4", envianumero);}
+          if (i==5){localStorage.setItem("item5", envianumero);}
+};
+document.getElementById("nome").value="";
+document.getElementById("fone").value="";
+localStorage.setItem('chamapagina', pagina);
+localStorage.setItem('nome', vnome);
+localStorage.setItem('fone', vfone);
+//    window.location.href = pagina;
+};
+
+</script>
+</body>
+</html>
